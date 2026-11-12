@@ -64,7 +64,7 @@ describe('Carrito de compras', () => {
 
   describe('Iteración 5: eliminar productos', () => {
     test('eliminar un producto lo quita del carrito', () => {
-      carrito.agregar('Mouse', 50000, 2);
+      carrito.agregar('Mouse', 500000, 2);
       carrito.agregar('Teclado', 120000, 1);
       carrito.eliminar('Mouse');
       assert.equal(carrito.cantidadDeItems(), 1);
