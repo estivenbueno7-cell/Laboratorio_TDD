@@ -163,5 +163,20 @@ describe('Carrito de compras', () => {
       assert.equal(carrito.iva(), 9500);
       assert.equal(carrito.total(), 71500);
     });
+    describe('Iteración 8: vaciar carrito', () => {
+
+  test('vaciar el carrito elimina todos los productos', () => {
+
+    carrito.agregar('Mouse', 50000, 2);
+    carrito.agregar('Teclado', 120000, 1);
+
+    carrito.vaciar();
+
+    assert.equal(carrito.cantidadDeItems(), 0);
+    assert.equal(carrito.subtotal(), 0);
+
+  });
+
+});
   });
 });
