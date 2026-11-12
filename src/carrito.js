@@ -85,4 +85,8 @@ export class Carrito {
       total: this.total(),
     };
   }
+  vaciar() {
+  this.productos = [];
+  this.cupon = null;
+}
 }
